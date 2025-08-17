@@ -187,8 +187,9 @@ SELECT
         WHEN `Ghazal Amount Invested` > 0 THEN 'Ghazal'
     END AS investor,
     COUNT(*) AS deal_count
-FROM shark_tank_data
+FROM shark_tank_data 
 WHERE Deal != 'No Deal'
 GROUP BY investor
-ORDER BY deal_count DESC
+ORDER BY deal_count DESC 
 LIMIT 1;
+SELECT *
