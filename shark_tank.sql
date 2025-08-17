@@ -192,4 +192,3 @@ WHERE Deal != 'No Deal'
 GROUP BY investor
 ORDER BY deal_count DESC 
 LIMIT 1;
-SELECT *
